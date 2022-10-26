@@ -9,13 +9,13 @@
                             "physicalLocation": {
                                 "artifactLocation": {
                                     "uri": "dataset/reentrancy/simple_dao.sol"
+                                },
+                                "region": {
+                                    "endColumn": 1,
+                                    "endLine": 19,
+                                    "startColumn": 1,
+                                    "startLine": 19
                                 }
-                            },
-                            "region": {
-                                "endColumn": 0,
-                                "endLine": 19,
-                                "startColumn": 0,
-                                "startLine": 19
                             }
                         }
                     ],
@@ -30,13 +30,13 @@
                             "physicalLocation": {
                                 "artifactLocation": {
                                     "uri": "dataset/reentrancy/simple_dao.sol"
+                                },
+                                "region": {
+                                    "endColumn": 1,
+                                    "endLine": 19,
+                                    "startColumn": 1,
+                                    "startLine": 19
                                 }
-                            },
-                            "region": {
-                                "endColumn": 0,
-                                "endLine": 19,
-                                "startColumn": 0,
-                                "startLine": 19
                             }
                         }
                     ],
@@ -51,13 +51,13 @@
                             "physicalLocation": {
                                 "artifactLocation": {
                                     "uri": "dataset/reentrancy/simple_dao.sol"
+                                },
+                                "region": {
+                                    "endColumn": 1,
+                                    "endLine": 19,
+                                    "startColumn": 1,
+                                    "startLine": 19
                                 }
-                            },
-                            "region": {
-                                "endColumn": 0,
-                                "endLine": 19,
-                                "startColumn": 0,
-                                "startLine": 19
                             }
                         }
                     ],
@@ -72,13 +72,13 @@
                             "physicalLocation": {
                                 "artifactLocation": {
                                     "uri": "dataset/reentrancy/simple_dao.sol"
+                                },
+                                "region": {
+                                    "endColumn": 1,
+                                    "endLine": 20,
+                                    "startColumn": 1,
+                                    "startLine": 20
                                 }
-                            },
-                            "region": {
-                                "endColumn": 0,
-                                "endLine": 20,
-                                "startColumn": 0,
-                                "startLine": 20
                             }
                         }
                     ],
@@ -93,13 +93,13 @@
                             "physicalLocation": {
                                 "artifactLocation": {
                                     "uri": "dataset/reentrancy/simple_dao.sol"
+                                },
+                                "region": {
+                                    "endColumn": 1,
+                                    "endLine": 20,
+                                    "startColumn": 1,
+                                    "startLine": 20
                                 }
-                            },
-                            "region": {
-                                "endColumn": 0,
-                                "endLine": 20,
-                                "startColumn": 0,
-                                "startLine": 20
                             }
                         }
                     ],

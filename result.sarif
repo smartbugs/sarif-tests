@@ -135,7 +135,7 @@
                     "rules": [
                         {
                             "defaultConfiguration": {
-                                "level": "TODO level"
+                                "level": "warning"
                             },
                             "fullDescription": {
                                 "text": "DELEGATECALL to user supplied address (SWC 112, DASP 10)"
@@ -158,14 +158,11 @@
                             },
                             "shortDescription": {
                                 "text": "DELEGATECALL to user supplied address"
-                            },
-                            "swc": [
-                                112
-                            ]
+                            }
                         },
                         {
                             "defaultConfiguration": {
-                                "level": "TODO level"
+                                "level": "warning"
                             },
                             "fullDescription": {
                                 "text": "TODO full description"
@@ -188,11 +185,7 @@
                             },
                             "shortDescription": {
                                 "text": "TODO shortdescription"
-                            },
-                            "swc": [
-                                120,
-                                116
-                            ]
+                            }
                         }
                     ],
                     "version": "0.23.5"

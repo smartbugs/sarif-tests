@@ -22,7 +22,7 @@
                     "message": {
                         "text": "A call to a user-supplied address is executed.\nAn external message call to an address specified by the caller is executed. Note that the callee account might contain arbitrary code and could re-enter any function within this contract. Reentering the contract in an intermediate state may lead to unexpected behaviour. Make sure that no state modifications are executed after this call and/or reentrancy guards are in place."
                     },
-                    "ruleId": "Mythril_Delegatecall"
+                    "ruleId": "External_Call_To_User-Supplied_Address"
                 },
                 {
                     "locations": [
@@ -43,7 +43,7 @@
                     "message": {
                         "text": "The return value of a message call is not checked.\nExternal calls return a boolean value. If the callee halts with an exception, 'false' is returned and execution continues in the caller. The caller should check whether an exception happened and react accordingly to avoid unexpected behavior. For example it is often desirable to wrap external calls in require() so the transaction is reverted if the call fails."
                     },
-                    "ruleId": "Mythril_Delegatecall"
+                    "ruleId": "Unchecked_return_value_from_external_call."
                 },
                 {
                     "locations": [
@@ -64,7 +64,7 @@
                     "message": {
                         "text": "Any sender can withdraw Ether from the contract account.\nArbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds."
                     },
-                    "ruleId": "Mythril_Delegatecall"
+                    "ruleId": "Unprotected_Ether_Withdrawal"
                 },
                 {
                     "locations": [
@@ -85,7 +85,7 @@
                     "message": {
                         "text": "Read of persistent state following external call\nThe contract account state is accessed after an external call to a user defined address. To prevent reentrancy issues, consider accessing the state only before the call, especially if the callee is untrusted. Alternatively, a reentrancy lock can be used to prevent untrusted callees from re-entering the contract in an intermediate state."
                     },
-                    "ruleId": "Mythril_Delegatecall"
+                    "ruleId": "State_access_after_external_call"
                 },
                 {
                     "locations": [
@@ -106,7 +106,7 @@
                     "message": {
                         "text": "Write to persistent state following external call\nThe contract account state is accessed after an external call to a user defined address. To prevent reentrancy issues, consider accessing the state only before the call, especially if the callee is untrusted. Alternatively, a reentrancy lock can be used to prevent untrusted callees from re-entering the contract in an intermediate state."
                     },
-                    "ruleId": "Mythril_Delegatecall"
+                    "ruleId": "State_access_after_external_call"
                 }
             ],
             "tool": {
@@ -115,58 +115,20 @@
                     "name": "mythril-0.23.5",
                     "rules": [
                         {
-                            "defaultConfiguration": {
-                                "level": "warning"
-                            },
-                            "fullDescription": {
-                                "text": "DELEGATECALL to user supplied address (SWC 112, DASP 10)"
-                            },
-                            "help": {
-                                "markdown": "TODO markdown",
-                                "text": "TODO help text"
-                            },
-                            "id": "Mythril_Delegatecall",
-                            "name": "MythrilDelegatecall",
-                            "properties": {
-                                "precision": "TODO precision",
-                                "problem": {
-                                    "severity": "TODO prob_severity"
-                                },
-                                "security-severity": "TODO security_severity",
-                                "tags": [
-                                    "TODO"
-                                ]
-                            },
-                            "shortDescription": {
-                                "text": "DELEGATECALL to user supplied address"
-                            }
+                            "id": "External_Call_To_User-Supplied_Address",
+                            "name": "ExternalCallToUserSuppliedAddress"
                         },
                         {
-                            "defaultConfiguration": {
-                                "level": "warning"
-                            },
-                            "fullDescription": {
-                                "text": "TODO full description"
-                            },
-                            "help": {
-                                "markdown": "TODO markdown",
-                                "text": "TODO help text"
-                            },
-                            "id": "Mythril_Dependence",
-                            "name": "MythrilDependence",
-                            "properties": {
-                                "precision": "TODO precision",
-                                "problem": {
-                                    "severity": "TODO prob_severity"
-                                },
-                                "security-severity": "TODO security_severity",
-                                "tags": [
-                                    "TODO"
-                                ]
-                            },
-                            "shortDescription": {
-                                "text": "TODO shortdescription"
-                            }
+                            "id": "Unchecked_return_value_from_external_call.",
+                            "name": "Uncheckedreturnvaluefromexternalcall."
+                        },
+                        {
+                            "id": "Unprotected_Ether_Withdrawal",
+                            "name": "UnprotectedEtherWithdrawal"
+                        },
+                        {
+                            "id": "State_access_after_external_call",
+                            "name": "Stateaccessafterexternalcall"
                         }
                     ],
                     "version": "0.23.5"

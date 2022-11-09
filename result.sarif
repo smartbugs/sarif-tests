@@ -8,7 +8,7 @@
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "dataset/reentrancy/simple_dao.sol"
+                                    "uri": "simple_dao.sol"
                                 },
                                 "region": {
                                     "endColumn": 1,
@@ -29,7 +29,7 @@
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "dataset/reentrancy/simple_dao.sol"
+                                    "uri": "simple_dao.sol"
                                 },
                                 "region": {
                                     "endColumn": 1,
@@ -50,7 +50,7 @@
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "dataset/reentrancy/simple_dao.sol"
+                                    "uri": "simple_dao.sol"
                                 },
                                 "region": {
                                     "endColumn": 1,
@@ -71,7 +71,7 @@
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "dataset/reentrancy/simple_dao.sol"
+                                    "uri": "simple_dao.sol"
                                 },
                                 "region": {
                                     "endColumn": 1,
@@ -92,7 +92,7 @@
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "dataset/reentrancy/simple_dao.sol"
+                                    "uri": "simple_dao.sol"
                                 },
                                 "region": {
                                     "endColumn": 1,

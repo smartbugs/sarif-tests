@@ -129,7 +129,7 @@
                         {
                             "id": "State_access_after_external_call",
                             "name": "Stateaccessafterexternalcall",
-			    "shortDescription": {
+			    "help": {
 			    	"text": "HELP."
 			    }
                         }

@@ -115,30 +115,18 @@
                     "name": "mythril-0.23.5",
                     "rules": [
                         {
-                            "help": {
-                                "text": "A call to a user-supplied address is executed.\nAn external message call to an address specified by the caller is executed. Note that the callee account might contain arbitrary code and could re-enter any function within this contract. Reentering the contract in an intermediate state may lead to unexpected behaviour. Make sure that no state modifications are executed after this call and/or reentrancy guards are in place."
-                            },
                             "id": "External_Call_To_User-Supplied_Address",
                             "name": "ExternalCallToUserSuppliedAddress"
                         },
                         {
-                            "help": {
-                                "text": "The return value of a message call is not checked.\nExternal calls return a boolean value. If the callee halts with an exception, 'false' is returned and execution continues in the caller. The caller should check whether an exception happened and react accordingly to avoid unexpected behavior. For example it is often desirable to wrap external calls in require() so the transaction is reverted if the call fails."
-                            },
                             "id": "Unchecked_return_value_from_external_call.",
                             "name": "Uncheckedreturnvaluefromexternalcall."
                         },
                         {
-                            "help": {
-                                "text": "Any sender can withdraw Ether from the contract account.\nArbitrary senders other than the contract creator can profitably extract Ether from the contract account. Verify the business logic carefully and make sure that appropriate security controls are in place to prevent unexpected loss of funds."
-                            },
                             "id": "Unprotected_Ether_Withdrawal",
                             "name": "UnprotectedEtherWithdrawal"
                         },
                         {
-                            "help": {
-                                "text": "Write to persistent state following external call\nThe contract account state is accessed after an external call to a user defined address. To prevent reentrancy issues, consider accessing the state only before the call, especially if the callee is untrusted. Alternatively, a reentrancy lock can be used to prevent untrusted callees from re-entering the contract in an intermediate state."
-                            },
                             "id": "State_access_after_external_call",
                             "name": "Stateaccessafterexternalcall"
                         }

@@ -4,8 +4,8 @@ name: "Upload SARIF"
 # The scheduled workflow runs every Thursday at 15:45 UTC.
 on:
   push:
-  schedule:
-    - cron: '45 15 * * 4'
+#  schedule:
+#    - cron: '45 15 * * 4'
 
 jobs:
   build:
@@ -28,3 +28,58 @@ jobs:
           # Optional category for the results
           # Used to differentiate multiple results for one commit
           category: my-analysis-tool
+      - name: Upload SARIF file conkas
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-conkas.sarif
+          category: conkas 
+      - name: Upload SARIF file for honeybadger
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-honeybadger.sarif
+          category: honeybadger
+      - name: Upload SARIF file for maian
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-maian.sarif
+          category: maian
+      - name: Upload SARIF file for manticore
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-manticore-0.3.7.sarif
+          category: manticore
+      - name: Upload SARIF file for mythril
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-mythril-0.23.5.sarif
+          category: mythril
+      - name: Upload SARIF file for osiris
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-osiris.sarif
+          category: osiris
+      - name: Upload SARIF file for oyente
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-oyente.sarif
+          category: oyente
+      - name: Upload SARIF file for securify
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-securify.sarif
+          category: securify
+      - name: Upload SARIF file for slither
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-slither.sarif
+          category: slither
+      - name: Upload SARIF file for smartcheck
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-smartcheck.sarif
+          category: smartcheck
+      - name: Upload SARIF file for solhint
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-solhint.sarif
+          category: solhint

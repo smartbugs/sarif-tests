@@ -19,6 +19,9 @@
                             }
                         }
                     ],
+                    "message": {
+                        "text": "No information available"
+                    },
                     "ruleId": "conkas_Integer_Overflow"
                 },
                 {
@@ -37,6 +40,9 @@
                             }
                         }
                     ],
+                    "message": {
+                        "text": "No information available"
+                    },
                     "ruleId": "conkas_Reentrancy"
                 },
                 {
@@ -55,6 +61,9 @@
                             }
                         }
                     ],
+                    "message": {
+                        "text": "No information available"
+                    },
                     "ruleId": "conkas_Unchecked_Low_Level_Call"
                 }
             ],
@@ -68,12 +77,12 @@
                             "name": "Unchecked Low Level Call"
                         },
                         {
-                            "id": "conkas_Reentrancy",
-                            "name": "Reentrancy"
-                        },
-                        {
                             "id": "conkas_Integer_Overflow",
                             "name": "Integer Overflow"
+                        },
+                        {
+                            "id": "conkas_Reentrancy",
+                            "name": "Reentrancy"
                         }
                     ],
                     "version": "#6aee098"

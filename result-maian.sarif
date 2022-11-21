@@ -17,7 +17,7 @@
                         }
                     ],
                     "message": {
-                        "text": "No information available"
+                        "text": "Not destructible (no self-destruct)"
                     },
                     "ruleId": "maian_Not_destructible_no_self_destruct"
                 },
@@ -35,7 +35,7 @@
                         }
                     ],
                     "message": {
-                        "text": "No information available"
+                        "text": "No Ether lock (Ether refused)"
                     },
                     "ruleId": "maian_No_Ether_lock_Ether_refused"
                 }
@@ -46,12 +46,12 @@
                     "name": "Maian",
                     "rules": [
                         {
-                            "id": "maian_Not_destructible_no_self_destruct",
-                            "name": "Not destructible (no self-destruct)"
-                        },
-                        {
                             "id": "maian_No_Ether_lock_Ether_refused",
                             "name": "No Ether lock (Ether refused)"
+                        },
+                        {
+                            "id": "maian_Not_destructible_no_self_destruct",
+                            "name": "Not destructible (no self-destruct)"
                         }
                     ],
                     "version": "#4bab09a"

@@ -18,7 +18,7 @@
                         }
                     ],
                     "message": {
-                        "text": "No information available\nSeverity: 2"
+                        "text": "SOLIDITY_CALL_WITHOUT_DATA\nSeverity: 2"
                     },
                     "ruleId": "smartcheck_SOLIDITY_CALL_WITHOUT_DATA"
                 },
@@ -37,7 +37,7 @@
                         }
                     ],
                     "message": {
-                        "text": "No information available\nSeverity: 1"
+                        "text": "SOLIDITY_PRAGMAS_VERSION\nSeverity: 1"
                     },
                     "ruleId": "smartcheck_SOLIDITY_PRAGMAS_VERSION"
                 },
@@ -56,7 +56,7 @@
                         }
                     ],
                     "message": {
-                        "text": "No information available\nSeverity: 1"
+                        "text": "SOLIDITY_UPGRADE_TO_050\nSeverity: 1"
                     },
                     "ruleId": "smartcheck_SOLIDITY_UPGRADE_TO_050"
                 },
@@ -75,7 +75,7 @@
                         }
                     ],
                     "message": {
-                        "text": "No information available\nSeverity: 1"
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
                     },
                     "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
                 },
@@ -94,7 +94,7 @@
                         }
                     ],
                     "message": {
-                        "text": "No information available\nSeverity: 1"
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
                     },
                     "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
                 },
@@ -113,7 +113,7 @@
                         }
                     ],
                     "message": {
-                        "text": "No information available\nSeverity: 1"
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
                     },
                     "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
                 }
@@ -123,6 +123,10 @@
                     "informationUri": "https://github.com/smartdec/smartcheck",
                     "name": "Smartcheck",
                     "rules": [
+                        {
+                            "id": "smartcheck_SOLIDITY_VISIBILITY",
+                            "name": "SOLIDITY_VISIBILITY"
+                        },
                         {
                             "id": "smartcheck_SOLIDITY_PRAGMAS_VERSION",
                             "name": "SOLIDITY_PRAGMAS_VERSION"
@@ -134,10 +138,6 @@
                         {
                             "id": "smartcheck_SOLIDITY_CALL_WITHOUT_DATA",
                             "name": "SOLIDITY_CALL_WITHOUT_DATA"
-                        },
-                        {
-                            "id": "smartcheck_SOLIDITY_VISIBILITY",
-                            "name": "SOLIDITY_VISIBILITY"
                         }
                     ]
                 }

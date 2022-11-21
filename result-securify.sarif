@@ -14,7 +14,7 @@
                         }
                     ],
                     "message": {
-                        "text": "No information available"
+                        "text": "UnhandledException"
                     },
                     "ruleId": "securify_UnhandledException"
                 },
@@ -29,9 +29,9 @@
                         }
                     ],
                     "message": {
-                        "text": "No information available"
+                        "text": "DAO"
                     },
-                    "ruleId": "securify_MissingInputValidation"
+                    "ruleId": "securify_DAO"
                 },
                 {
                     "locations": [
@@ -44,9 +44,9 @@
                         }
                     ],
                     "message": {
-                        "text": "No information available"
+                        "text": "MissingInputValidation"
                     },
-                    "ruleId": "securify_DAO"
+                    "ruleId": "securify_MissingInputValidation"
                 }
             ],
             "tool": {
@@ -59,12 +59,12 @@
                             "name": "UnhandledException"
                         },
                         {
-                            "id": "securify_MissingInputValidation",
-                            "name": "MissingInputValidation"
-                        },
-                        {
                             "id": "securify_DAO",
                             "name": "DAO"
+                        },
+                        {
+                            "id": "securify_MissingInputValidation",
+                            "name": "MissingInputValidation"
                         }
                     ]
                 }

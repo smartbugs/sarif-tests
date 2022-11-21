@@ -20,28 +20,7 @@
                         }
                     ],
                     "message": {
-                        "text": "No information available"
-                    },
-                    "ruleId": "conkas_Reentrancy"
-                },
-                {
-                    "locations": [
-                        {
-                            "message": {
-                                "text": "contract SimpleDAO, function withdraw(uint256)"
-                            },
-                            "physicalLocation": {
-                                "artifactLocation": {
-                                    "uri": "simple_dao.sol"
-                                },
-                                "region": {
-                                    "startLine": 19
-                                }
-                            }
-                        }
-                    ],
-                    "message": {
-                        "text": "No information available"
+                        "text": "Unchecked Low Level Call"
                     },
                     "ruleId": "conkas_Unchecked_Low_Level_Call"
                 },
@@ -62,9 +41,30 @@
                         }
                     ],
                     "message": {
-                        "text": "No information available"
+                        "text": "Integer Overflow"
                     },
                     "ruleId": "conkas_Integer_Overflow"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract SimpleDAO, function withdraw(uint256)"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "simple_dao.sol"
+                                },
+                                "region": {
+                                    "startLine": 19
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Reentrancy"
+                    },
+                    "ruleId": "conkas_Reentrancy"
                 }
             ],
             "tool": {
@@ -77,12 +77,12 @@
                             "name": "Integer Overflow"
                         },
                         {
-                            "id": "conkas_Unchecked_Low_Level_Call",
-                            "name": "Unchecked Low Level Call"
-                        },
-                        {
                             "id": "conkas_Reentrancy",
                             "name": "Reentrancy"
+                        },
+                        {
+                            "id": "conkas_Unchecked_Low_Level_Call",
+                            "name": "Unchecked Low Level Call"
                         }
                     ],
                     "version": "#6aee098"

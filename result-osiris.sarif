@@ -21,7 +21,7 @@
                         }
                     ],
                     "message": {
-                        "text": "No information available"
+                        "text": "Callstack bug"
                     },
                     "ruleId": "osiris_Callstack_bug"
                 },
@@ -43,7 +43,7 @@
                         }
                     ],
                     "message": {
-                        "text": "No information available"
+                        "text": "Overflow bugs"
                     },
                     "ruleId": "osiris_Overflow_bugs"
                 },
@@ -65,7 +65,7 @@
                         }
                     ],
                     "message": {
-                        "text": "No information available"
+                        "text": "Reentrancy bug"
                     },
                     "ruleId": "osiris_Reentrancy_bug"
                 },
@@ -87,7 +87,7 @@
                         }
                     ],
                     "message": {
-                        "text": "No information available"
+                        "text": "Underflow bugs"
                     },
                     "ruleId": "osiris_Underflow_bugs"
                 }
@@ -98,20 +98,20 @@
                     "name": "Osiris",
                     "rules": [
                         {
-                            "id": "osiris_Callstack_bug",
-                            "name": "Callstack bug"
-                        },
-                        {
                             "id": "osiris_Underflow_bugs",
                             "name": "Underflow bugs"
+                        },
+                        {
+                            "id": "osiris_Overflow_bugs",
+                            "name": "Overflow bugs"
                         },
                         {
                             "id": "osiris_Reentrancy_bug",
                             "name": "Reentrancy bug"
                         },
                         {
-                            "id": "osiris_Overflow_bugs",
-                            "name": "Overflow bugs"
+                            "id": "osiris_Callstack_bug",
+                            "name": "Callstack bug"
                         }
                     ]
                 }

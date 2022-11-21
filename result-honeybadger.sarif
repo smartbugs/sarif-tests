@@ -17,7 +17,7 @@
                         }
                     ],
                     "message": {
-                        "text": "No information available"
+                        "text": "Money flow"
                     },
                     "ruleId": "honeybadger_Money_flow"
                 }

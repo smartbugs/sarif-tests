@@ -138,20 +138,20 @@
                     "name": "Slither",
                     "rules": [
                         {
-                            "id": "slither_solc_version",
-                            "name": "solc-version"
+                            "id": "slither_external_function",
+                            "name": "external-function"
                         },
                         {
                             "id": "slither_reentrancy_eth",
                             "name": "reentrancy-eth"
                         },
                         {
-                            "id": "slither_external_function",
-                            "name": "external-function"
-                        },
-                        {
                             "id": "slither_low_level_calls",
                             "name": "low-level-calls"
+                        },
+                        {
+                            "id": "slither_solc_version",
+                            "name": "solc-version"
                         }
                     ]
                 }

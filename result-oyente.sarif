@@ -21,7 +21,7 @@
                         }
                     ],
                     "message": {
-                        "text": "No information available"
+                        "text": "Callstack Depth Attack Vulnerability"
                     },
                     "ruleId": "oyente_Callstack_Depth_Attack_Vulnerability"
                 },
@@ -43,7 +43,7 @@
                         }
                     ],
                     "message": {
-                        "text": "No information available"
+                        "text": "Integer Overflow"
                     },
                     "ruleId": "oyente_Integer_Overflow"
                 },
@@ -65,7 +65,7 @@
                         }
                     ],
                     "message": {
-                        "text": "No information available"
+                        "text": "Re-Entrancy Vulnerability"
                     },
                     "ruleId": "oyente_Re_Entrancy_Vulnerability"
                 }

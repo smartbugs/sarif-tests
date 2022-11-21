@@ -4,7 +4,7 @@
         {
             "results": [
                 {
-                    "level": "Error",
+                    "level": "error",
                     "locations": [
                         {
                             "physicalLocation": {
@@ -12,8 +12,8 @@
                                     "uri": "simple_dao.sol"
                                 },
                                 "region": {
-                                    "startColumn": "3",
-                                    "startLine": "10"
+                                    "startColumn": 3,
+                                    "startLine": 10
                                 }
                             }
                         }
@@ -24,7 +24,7 @@
                     "ruleId": "solhint_indent"
                 },
                 {
-                    "level": "Error",
+                    "level": "error",
                     "locations": [
                         {
                             "physicalLocation": {
@@ -32,8 +32,8 @@
                                     "uri": "simple_dao.sol"
                                 },
                                 "region": {
-                                    "startColumn": "3",
-                                    "startLine": "12"
+                                    "startColumn": 3,
+                                    "startLine": 12
                                 }
                             }
                         }
@@ -44,7 +44,7 @@
                     "ruleId": "solhint_indent"
                 },
                 {
-                    "level": "Error",
+                    "level": "error",
                     "locations": [
                         {
                             "physicalLocation": {
@@ -52,8 +52,8 @@
                                     "uri": "simple_dao.sol"
                                 },
                                 "region": {
-                                    "startColumn": "5",
-                                    "startLine": "13"
+                                    "startColumn": 5,
+                                    "startLine": 13
                                 }
                             }
                         }
@@ -64,7 +64,7 @@
                     "ruleId": "solhint_indent"
                 },
                 {
-                    "level": "Error",
+                    "level": "error",
                     "locations": [
                         {
                             "physicalLocation": {
@@ -72,8 +72,8 @@
                                     "uri": "simple_dao.sol"
                                 },
                                 "region": {
-                                    "startColumn": "3",
-                                    "startLine": "14"
+                                    "startColumn": 3,
+                                    "startLine": 14
                                 }
                             }
                         }
@@ -84,7 +84,7 @@
                     "ruleId": "solhint_indent"
                 },
                 {
-                    "level": "Error",
+                    "level": "error",
                     "locations": [
                         {
                             "physicalLocation": {
@@ -92,8 +92,8 @@
                                     "uri": "simple_dao.sol"
                                 },
                                 "region": {
-                                    "startColumn": "3",
-                                    "startLine": "16"
+                                    "startColumn": 3,
+                                    "startLine": 16
                                 }
                             }
                         }
@@ -104,7 +104,7 @@
                     "ruleId": "solhint_indent"
                 },
                 {
-                    "level": "Error",
+                    "level": "error",
                     "locations": [
                         {
                             "physicalLocation": {
@@ -112,8 +112,8 @@
                                     "uri": "simple_dao.sol"
                                 },
                                 "region": {
-                                    "startColumn": "5",
-                                    "startLine": "17"
+                                    "startColumn": 5,
+                                    "startLine": 17
                                 }
                             }
                         }
@@ -124,7 +124,7 @@
                     "ruleId": "solhint_indent"
                 },
                 {
-                    "level": "Error",
+                    "level": "error",
                     "locations": [
                         {
                             "physicalLocation": {
@@ -132,8 +132,8 @@
                                     "uri": "simple_dao.sol"
                                 },
                                 "region": {
-                                    "startColumn": "7",
-                                    "startLine": "19"
+                                    "startColumn": 7,
+                                    "startLine": 19
                                 }
                             }
                         }
@@ -144,7 +144,7 @@
                     "ruleId": "solhint_indent"
                 },
                 {
-                    "level": "Error",
+                    "level": "error",
                     "locations": [
                         {
                             "physicalLocation": {
@@ -152,8 +152,8 @@
                                     "uri": "simple_dao.sol"
                                 },
                                 "region": {
-                                    "startColumn": "7",
-                                    "startLine": "20"
+                                    "startColumn": 7,
+                                    "startLine": 20
                                 }
                             }
                         }
@@ -164,7 +164,7 @@
                     "ruleId": "solhint_indent"
                 },
                 {
-                    "level": "Error",
+                    "level": "error",
                     "locations": [
                         {
                             "physicalLocation": {
@@ -172,8 +172,8 @@
                                     "uri": "simple_dao.sol"
                                 },
                                 "region": {
-                                    "startColumn": "5",
-                                    "startLine": "21"
+                                    "startColumn": 5,
+                                    "startLine": 21
                                 }
                             }
                         }
@@ -184,7 +184,7 @@
                     "ruleId": "solhint_indent"
                 },
                 {
-                    "level": "Error",
+                    "level": "error",
                     "locations": [
                         {
                             "physicalLocation": {
@@ -192,8 +192,8 @@
                                     "uri": "simple_dao.sol"
                                 },
                                 "region": {
-                                    "startColumn": "3",
-                                    "startLine": "22"
+                                    "startColumn": 3,
+                                    "startLine": 22
                                 }
                             }
                         }
@@ -204,7 +204,7 @@
                     "ruleId": "solhint_indent"
                 },
                 {
-                    "level": "Error",
+                    "level": "error",
                     "locations": [
                         {
                             "physicalLocation": {
@@ -212,8 +212,8 @@
                                     "uri": "simple_dao.sol"
                                 },
                                 "region": {
-                                    "startColumn": "3",
-                                    "startLine": "24"
+                                    "startColumn": 3,
+                                    "startLine": 24
                                 }
                             }
                         }
@@ -224,7 +224,7 @@
                     "ruleId": "solhint_indent"
                 },
                 {
-                    "level": "Error",
+                    "level": "error",
                     "locations": [
                         {
                             "physicalLocation": {
@@ -232,8 +232,8 @@
                                     "uri": "simple_dao.sol"
                                 },
                                 "region": {
-                                    "startColumn": "5",
-                                    "startLine": "25"
+                                    "startColumn": 5,
+                                    "startLine": 25
                                 }
                             }
                         }
@@ -244,7 +244,7 @@
                     "ruleId": "solhint_indent"
                 },
                 {
-                    "level": "Error",
+                    "level": "error",
                     "locations": [
                         {
                             "physicalLocation": {
@@ -252,8 +252,8 @@
                                     "uri": "simple_dao.sol"
                                 },
                                 "region": {
-                                    "startColumn": "3",
-                                    "startLine": "26"
+                                    "startColumn": 3,
+                                    "startLine": 26
                                 }
                             }
                         }

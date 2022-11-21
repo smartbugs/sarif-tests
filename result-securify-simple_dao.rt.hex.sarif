@@ -8,22 +8,7 @@
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "simple_dao.sol"
-                                }
-                            }
-                        }
-                    ],
-                    "message": {
-                        "text": "UnhandledException"
-                    },
-                    "ruleId": "securify_UnhandledException"
-                },
-                {
-                    "locations": [
-                        {
-                            "physicalLocation": {
-                                "artifactLocation": {
-                                    "uri": "simple_dao.sol"
+                                    "uri": "simple_dao.rt.hex"
                                 }
                             }
                         }
@@ -38,7 +23,7 @@
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "simple_dao.sol"
+                                    "uri": "simple_dao.rt.hex"
                                 }
                             }
                         }
@@ -54,10 +39,6 @@
                     "informationUri": "https://github.com/eth-sri/securify",
                     "name": "Securify",
                     "rules": [
-                        {
-                            "id": "securify_UnhandledException",
-                            "name": "UnhandledException"
-                        },
                         {
                             "id": "securify_DAO",
                             "name": "DAO"

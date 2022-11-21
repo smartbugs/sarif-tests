@@ -6,12 +6,9 @@
                 {
                     "locations": [
                         {
-                            "message": {
-                                "text": "contract SimpleDAO"
-                            },
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "simple_dao.sol"
+                                    "uri": "simple_dao.hex"
                                 }
                             }
                         }
@@ -24,12 +21,9 @@
                 {
                     "locations": [
                         {
-                            "message": {
-                                "text": "contract SimpleDAO"
-                            },
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "simple_dao.sol"
+                                    "uri": "simple_dao.hex"
                                 }
                             }
                         }

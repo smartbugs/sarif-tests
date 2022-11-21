@@ -20,66 +20,133 @@ jobs:
       # This step checks out a copy of your repository.
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Upload SARIF file
+      - name: Upload SARIF file for slither, mode sol
         uses: github/codeql-action/upload-sarif@v2
         with:
-          # Path to SARIF file relative to the root of the repository
-          sarif_file: result.sarif
-          # Optional category for the results
-          # Used to differentiate multiple results for one commit
-          category: my-analysis-tool
-      - name: Upload SARIF file conkas
+          sarif_file: result-slither-simple_dao.sol.sarif
+          category: slither/sol
+      - name: Upload SARIF file for smartcheck, mode sol
         uses: github/codeql-action/upload-sarif@v2
         with:
-          sarif_file: result-conkas.sarif
-          category: conkas 
-      - name: Upload SARIF file for honeybadger
+          sarif_file: result-smartcheck-simple_dao.sol.sarif
+          category: smartcheck/sol
+      - name: Upload SARIF file for honeybadger, mode sol
         uses: github/codeql-action/upload-sarif@v2
         with:
-          sarif_file: result-honeybadger.sarif
-          category: honeybadger
-      - name: Upload SARIF file for maian
+          sarif_file: result-honeybadger-simple_dao.sol.sarif
+          category: honeybadger/sol
+      - name: Upload SARIF file for honeybadger, mode rt.hex
         uses: github/codeql-action/upload-sarif@v2
         with:
-          sarif_file: result-maian.sarif
-          category: maian
-      - name: Upload SARIF file for manticore
+          sarif_file: result-honeybadger-simple_dao.rt.hex.sarif
+          category: honeybadger/rt.hex
+      - name: Upload SARIF file for conkas, mode sol
         uses: github/codeql-action/upload-sarif@v2
         with:
-          sarif_file: result-manticore-0.3.7.sarif
-          category: manticore
-      - name: Upload SARIF file for mythril
+          sarif_file: result-conkas-simple_dao.sol.sarif
+          category: conkas/sol
+      - name: Upload SARIF file for conkas, mode rt.hex
         uses: github/codeql-action/upload-sarif@v2
         with:
-          sarif_file: result-mythril-0.23.5.sarif
-          category: mythril
-      - name: Upload SARIF file for osiris
+          sarif_file: result-conkas-simple_dao.rt.hex.sarif
+          category: conkas/rt.hex
+      - name: Upload SARIF file for oyente, mode sol
         uses: github/codeql-action/upload-sarif@v2
         with:
-          sarif_file: result-osiris.sarif
-          category: osiris
-      - name: Upload SARIF file for oyente
+          sarif_file: result-oyente-simple_dao.sol.sarif
+          category: oyente/sol
+      - name: Upload SARIF file for oyente, mode rt.hex
         uses: github/codeql-action/upload-sarif@v2
         with:
-          sarif_file: result-oyente.sarif
-          category: oyente
-      - name: Upload SARIF file for securify
+          sarif_file: result-oyente-simple_dao.rt.hex.sarif
+          category: oyente/rt.hex
+      - name: Upload SARIF file for maian, mode sol
         uses: github/codeql-action/upload-sarif@v2
         with:
-          sarif_file: result-securify.sarif
-          category: securify
-      - name: Upload SARIF file for slither
+          sarif_file: result-maian-simple_dao.sol.sarif
+          category: maian/sol
+      - name: Upload SARIF file for maian, mode rt.hex
         uses: github/codeql-action/upload-sarif@v2
         with:
-          sarif_file: result-slither.sarif
-          category: slither
-      - name: Upload SARIF file for smartcheck
+          sarif_file: result-maian-simple_dao.rt.hex.sarif
+          category: maian/rt.hex
+      - name: Upload SARIF file for maian, mode hex
         uses: github/codeql-action/upload-sarif@v2
         with:
-          sarif_file: result-smartcheck.sarif
-          category: smartcheck
-      - name: Upload SARIF file for solhint
+          sarif_file: result-maian-simple_dao.hex.sarif
+          category: maian/hex
+      - name: Upload SARIF file for madmax, mode rt.hex
         uses: github/codeql-action/upload-sarif@v2
         with:
-          sarif_file: result-solhint.sarif
-          category: solhint
+          sarif_file: result-madmax-simple_dao.rt.hex.sarif
+          category: madmax/rt.hex
+      - name: Upload SARIF file for pakala, mode rt.hex
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-pakala-simple_dao.rt.hex.sarif
+          category: pakala/rt.hex
+      - name: Upload SARIF file for ethainter, mode rt.hex
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-ethainter-simple_dao.rt.hex.sarif
+          category: ethainter/rt.hex
+      - name: Upload SARIF file for vandal, mode rt.hex
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-vandal-simple_dao.rt.hex.sarif
+          category: vandal/rt.hex
+      - name: Upload SARIF file for teether, mode rt.hex
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-teether-simple_dao.rt.hex.sarif
+          category: teether/rt.hex
+      - name: Upload SARIF file for osiris, mode sol
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-osiris-simple_dao.sol.sarif
+          category: osiris/sol
+      - name: Upload SARIF file for osiris, mode rt.hex
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-osiris-simple_dao.rt.hex.sarif
+          category: osiris/rt.hex
+      - name: Upload SARIF file for solhint, mode sol
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-solhint-simple_dao.sol.sarif
+          category: solhint/sol
+      - name: Upload SARIF file for securify, mode sol
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-securify-simple_dao.sol.sarif
+          category: securify/sol
+      - name: Upload SARIF file for securify, mode rt.hex
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-securify-simple_dao.rt.hex.sarif
+          category: securify/rt.hex
+      - name: Upload SARIF file for ethor, mode rt.hex
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-ethor-simple_dao.rt.hex.sarif
+          category: ethor/rt.hex
+      - name: Upload SARIF file for mythril-0.23.5, mode sol
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-mythril-0.23.5-simple_dao.sol.sarif
+          category: mythril-0.23.5/sol
+      - name: Upload SARIF file for mythril-0.23.5, mode rt.hex
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-mythril-0.23.5-simple_dao.rt.hex.sarif
+          category: mythril-0.23.5/rt.hex
+      - name: Upload SARIF file for mythril-0.23.5, mode hex
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-mythril-0.23.5-simple_dao.hex.sarif
+          category: mythril-0.23.5/hex
+      - name: Upload SARIF file for manticore-0.3.7, mode sol
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: result-manticore-0.3.7-simple_dao.sol.sarif
+          category: manticore-0.3.7/sol

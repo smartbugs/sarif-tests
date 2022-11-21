@@ -6,16 +6,9 @@
                 {
                     "locations": [
                         {
-                            "message": {
-                                "text": "contract SimpleDAO"
-                            },
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "simple_dao.sol"
-                                },
-                                "region": {
-                                    "startColumn": 18,
-                                    "startLine": 19
+                                    "uri": "simple_dao.rt.hex"
                                 }
                             }
                         }
@@ -28,16 +21,9 @@
                 {
                     "locations": [
                         {
-                            "message": {
-                                "text": "contract SimpleDAO"
-                            },
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "simple_dao.sol"
-                                },
-                                "region": {
-                                    "startColumn": 5,
-                                    "startLine": 13
+                                    "uri": "simple_dao.rt.hex"
                                 }
                             }
                         }
@@ -50,16 +36,9 @@
                 {
                     "locations": [
                         {
-                            "message": {
-                                "text": "contract SimpleDAO"
-                            },
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "simple_dao.sol"
-                                },
-                                "region": {
-                                    "startColumn": 18,
-                                    "startLine": 19
+                                    "uri": "simple_dao.rt.hex"
                                 }
                             }
                         }
@@ -72,16 +51,9 @@
                 {
                     "locations": [
                         {
-                            "message": {
-                                "text": "contract SimpleDAO"
-                            },
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "simple_dao.sol"
-                                },
-                                "region": {
-                                    "startColumn": 7,
-                                    "startLine": 20
+                                    "uri": "simple_dao.rt.hex"
                                 }
                             }
                         }
@@ -98,20 +70,20 @@
                     "name": "Osiris",
                     "rules": [
                         {
-                            "id": "osiris_Underflow_bugs",
-                            "name": "Underflow bugs"
-                        },
-                        {
-                            "id": "osiris_Overflow_bugs",
-                            "name": "Overflow bugs"
+                            "id": "osiris_Callstack_bug",
+                            "name": "Callstack bug"
                         },
                         {
                             "id": "osiris_Reentrancy_bug",
                             "name": "Reentrancy bug"
                         },
                         {
-                            "id": "osiris_Callstack_bug",
-                            "name": "Callstack bug"
+                            "id": "osiris_Overflow_bugs",
+                            "name": "Overflow bugs"
+                        },
+                        {
+                            "id": "osiris_Underflow_bugs",
+                            "name": "Underflow bugs"
                         }
                     ]
                 }

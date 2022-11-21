@@ -7,85 +7,113 @@
                     "locations": [
                         {
                             "message": {
-                                "text": "contract SimpleDAO, function donate(address)"
+                                "text": "contract SimpleDAO"
                             },
                             "physicalLocation": {
                                 "artifactLocation": {
                                     "uri": "simple_dao.sol"
                                 },
                                 "region": {
+                                    "startColumn": 18,
+                                    "startLine": 19
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Callstack bug"
+                    },
+                    "ruleId": "osiris_Callstack_bug"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "contract SimpleDAO"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "simple_dao.sol"
+                                },
+                                "region": {
+                                    "startColumn": 5,
                                     "startLine": 13
                                 }
                             }
                         }
                     ],
                     "message": {
-                        "text": "No information available"
+                        "text": "Overflow bugs"
                     },
-                    "ruleId": "conkas_Integer_Overflow"
+                    "ruleId": "osiris_Overflow_bugs"
                 },
                 {
                     "locations": [
                         {
                             "message": {
-                                "text": "contract SimpleDAO, function withdraw(uint256)"
+                                "text": "contract SimpleDAO"
                             },
                             "physicalLocation": {
                                 "artifactLocation": {
                                     "uri": "simple_dao.sol"
                                 },
                                 "region": {
+                                    "startColumn": 18,
                                     "startLine": 19
                                 }
                             }
                         }
                     ],
                     "message": {
-                        "text": "No information available"
+                        "text": "Reentrancy bug"
                     },
-                    "ruleId": "conkas_Reentrancy"
+                    "ruleId": "osiris_Reentrancy_bug"
                 },
                 {
                     "locations": [
                         {
                             "message": {
-                                "text": "contract SimpleDAO, function withdraw(uint256)"
+                                "text": "contract SimpleDAO"
                             },
                             "physicalLocation": {
                                 "artifactLocation": {
                                     "uri": "simple_dao.sol"
                                 },
                                 "region": {
-                                    "startLine": 19
+                                    "startColumn": 7,
+                                    "startLine": 20
                                 }
                             }
                         }
                     ],
                     "message": {
-                        "text": "No information available"
+                        "text": "Underflow bugs"
                     },
-                    "ruleId": "conkas_Unchecked_Low_Level_Call"
+                    "ruleId": "osiris_Underflow_bugs"
                 }
             ],
             "tool": {
                 "driver": {
-                    "informationUri": "https://github.com/nveloso/conkas",
-                    "name": "Conkas",
+                    "informationUri": "https://github.com/christoftorres/Osiris",
+                    "name": "Osiris",
                     "rules": [
                         {
-                            "id": "conkas_Unchecked_Low_Level_Call",
-                            "name": "Unchecked Low Level Call"
+                            "id": "osiris_Reentrancy_bug",
+                            "name": "Reentrancy bug"
                         },
                         {
-                            "id": "conkas_Integer_Overflow",
-                            "name": "Integer Overflow"
+                            "id": "osiris_Underflow_bugs",
+                            "name": "Underflow bugs"
                         },
                         {
-                            "id": "conkas_Reentrancy",
-                            "name": "Reentrancy"
+                            "id": "osiris_Callstack_bug",
+                            "name": "Callstack bug"
+                        },
+                        {
+                            "id": "osiris_Overflow_bugs",
+                            "name": "Overflow bugs"
                         }
-                    ],
-                    "version": "#6aee098"
+                    ]
                 }
             }
         }

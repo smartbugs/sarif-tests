@@ -6,90 +6,21 @@
                 {
                     "locations": [
                         {
-                            "message": {
-                                "text": "contract SimpleDAO, function withdraw"
-                            },
                             "physicalLocation": {
                                 "artifactLocation": {
                                     "uri": "simple_dao.sol"
                                 },
                                 "region": {
-                                    "endLine": 22,
-                                    "startLine": 16
+                                    "startColumn": 28,
+                                    "startLine": 19
                                 }
                             }
                         }
                     ],
                     "message": {
-                        "text": "Reentrancy in SimpleDAO.withdraw (simple_dao.sol#16-22):\n\tExternal calls:\n\t- res = msg.sender.call.value(amount)() (simple_dao.sol#19)\n\tState variables written after the call(s):\n\t- credit (simple_dao.sol#20)\n"
+                        "text": "SOLIDITY_CALL_WITHOUT_DATA\nSeverity: 2"
                     },
-                    "ruleId": "slither_reentrancy_eth"
-                },
-                {
-                    "locations": [
-                        {
-                            "message": {
-                                "text": "contract SimpleDAO, function donate"
-                            },
-                            "physicalLocation": {
-                                "artifactLocation": {
-                                    "uri": "simple_dao.sol"
-                                },
-                                "region": {
-                                    "endLine": 14,
-                                    "startLine": 12
-                                }
-                            }
-                        }
-                    ],
-                    "message": {
-                        "text": "SimpleDAO.donate (simple_dao.sol#12-14) should be declared external\n"
-                    },
-                    "ruleId": "slither_external_function"
-                },
-                {
-                    "locations": [
-                        {
-                            "message": {
-                                "text": "contract SimpleDAO, function withdraw"
-                            },
-                            "physicalLocation": {
-                                "artifactLocation": {
-                                    "uri": "simple_dao.sol"
-                                },
-                                "region": {
-                                    "endLine": 22,
-                                    "startLine": 16
-                                }
-                            }
-                        }
-                    ],
-                    "message": {
-                        "text": "SimpleDAO.withdraw (simple_dao.sol#16-22) should be declared external\n"
-                    },
-                    "ruleId": "slither_external_function"
-                },
-                {
-                    "locations": [
-                        {
-                            "message": {
-                                "text": "contract SimpleDAO, function queryCredit"
-                            },
-                            "physicalLocation": {
-                                "artifactLocation": {
-                                    "uri": "simple_dao.sol"
-                                },
-                                "region": {
-                                    "endLine": 26,
-                                    "startLine": 24
-                                }
-                            }
-                        }
-                    ],
-                    "message": {
-                        "text": "SimpleDAO.queryCredit (simple_dao.sol#24-26) should be declared external\n"
-                    },
-                    "ruleId": "slither_external_function"
+                    "ruleId": "smartcheck_SOLIDITY_CALL_WITHOUT_DATA"
                 },
                 {
                     "locations": [
@@ -99,59 +30,114 @@
                                     "uri": "simple_dao.sol"
                                 },
                                 "region": {
+                                    "startColumn": 16,
                                     "startLine": 7
                                 }
                             }
                         }
                     ],
                     "message": {
-                        "text": "Detected issues with version pragma in simple_dao.sol:\n\t- pragma solidity^0.4.2 (simple_dao.sol#7): it allows old versions\n"
+                        "text": "SOLIDITY_PRAGMAS_VERSION\nSeverity: 1"
                     },
-                    "ruleId": "slither_solc_version"
+                    "ruleId": "smartcheck_SOLIDITY_PRAGMAS_VERSION"
                 },
                 {
                     "locations": [
                         {
-                            "message": {
-                                "text": "contract SimpleDAO, function withdraw"
-                            },
                             "physicalLocation": {
                                 "artifactLocation": {
                                     "uri": "simple_dao.sol"
                                 },
                                 "region": {
-                                    "endLine": 22,
+                                    "startColumn": 28,
+                                    "startLine": 19
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_UPGRADE_TO_050\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_UPGRADE_TO_050"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "simple_dao.sol"
+                                },
+                                "region": {
+                                    "startColumn": 2,
+                                    "startLine": 12
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "simple_dao.sol"
+                                },
+                                "region": {
+                                    "startColumn": 2,
                                     "startLine": 16
                                 }
                             }
                         }
                     ],
                     "message": {
-                        "text": "Low level call in SimpleDAO.withdraw (simple_dao.sol#16-22):\n\t-res = msg.sender.call.value(amount)() simple_dao.sol#19\n"
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
                     },
-                    "ruleId": "slither_low_level_calls"
+                    "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
+                },
+                {
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "simple_dao.sol"
+                                },
+                                "region": {
+                                    "startColumn": 2,
+                                    "startLine": 24
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "SOLIDITY_VISIBILITY\nSeverity: 1"
+                    },
+                    "ruleId": "smartcheck_SOLIDITY_VISIBILITY"
                 }
             ],
             "tool": {
                 "driver": {
-                    "informationUri": "https://github.com/crytic/slither",
-                    "name": "Slither",
+                    "informationUri": "https://github.com/smartdec/smartcheck",
+                    "name": "Smartcheck",
                     "rules": [
                         {
-                            "id": "slither_external_function",
-                            "name": "external-function"
+                            "id": "smartcheck_SOLIDITY_UPGRADE_TO_050",
+                            "name": "SOLIDITY_UPGRADE_TO_050"
                         },
                         {
-                            "id": "slither_reentrancy_eth",
-                            "name": "reentrancy-eth"
+                            "id": "smartcheck_SOLIDITY_VISIBILITY",
+                            "name": "SOLIDITY_VISIBILITY"
                         },
                         {
-                            "id": "slither_low_level_calls",
-                            "name": "low-level-calls"
+                            "id": "smartcheck_SOLIDITY_PRAGMAS_VERSION",
+                            "name": "SOLIDITY_PRAGMAS_VERSION"
                         },
                         {
-                            "id": "slither_solc_version",
-                            "name": "solc-version"
+                            "id": "smartcheck_SOLIDITY_CALL_WITHOUT_DATA",
+                            "name": "SOLIDITY_CALL_WITHOUT_DATA"
                         }
                     ]
                 }

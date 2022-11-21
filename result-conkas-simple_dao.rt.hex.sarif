@@ -7,14 +7,59 @@
                     "locations": [
                         {
                             "message": {
-                                "text": "contract SimpleDAO, function withdraw(uint256)"
+                                "text": "function withdraw(uint256)"
                             },
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "simple_dao.sol"
+                                    "uri": "simple_dao.rt.hex"
                                 },
                                 "region": {
-                                    "startLine": 19
+                                    "startColumn": 1037,
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Integer Underflow"
+                    },
+                    "ruleId": "conkas_Integer_Underflow"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "function withdraw(uint256)"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "simple_dao.rt.hex"
+                                },
+                                "region": {
+                                    "startColumn": 1039,
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "Reentrancy"
+                    },
+                    "ruleId": "conkas_Reentrancy"
+                },
+                {
+                    "locations": [
+                        {
+                            "message": {
+                                "text": "function withdraw(uint256)"
+                            },
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "simple_dao.rt.hex"
+                                },
+                                "region": {
+                                    "startColumn": 1039,
+                                    "startLine": 1
                                 }
                             }
                         }
@@ -28,14 +73,15 @@
                     "locations": [
                         {
                             "message": {
-                                "text": "contract SimpleDAO, function donate(address)"
+                                "text": "function donate(address)"
                             },
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "simple_dao.sol"
+                                    "uri": "simple_dao.rt.hex"
                                 },
                                 "region": {
-                                    "startLine": 13
+                                    "startColumn": 775,
+                                    "startLine": 1
                                 }
                             }
                         }
@@ -44,27 +90,6 @@
                         "text": "Integer Overflow"
                     },
                     "ruleId": "conkas_Integer_Overflow"
-                },
-                {
-                    "locations": [
-                        {
-                            "message": {
-                                "text": "contract SimpleDAO, function withdraw(uint256)"
-                            },
-                            "physicalLocation": {
-                                "artifactLocation": {
-                                    "uri": "simple_dao.sol"
-                                },
-                                "region": {
-                                    "startLine": 19
-                                }
-                            }
-                        }
-                    ],
-                    "message": {
-                        "text": "Reentrancy"
-                    },
-                    "ruleId": "conkas_Reentrancy"
                 }
             ],
             "tool": {
@@ -75,6 +100,10 @@
                         {
                             "id": "conkas_Integer_Overflow",
                             "name": "Integer Overflow"
+                        },
+                        {
+                            "id": "conkas_Integer_Underflow",
+                            "name": "Integer Underflow"
                         },
                         {
                             "id": "conkas_Reentrancy",

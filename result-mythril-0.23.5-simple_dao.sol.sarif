@@ -116,34 +116,15 @@
                     "rules": [
                         {
                             "fullDescription": {
-                                "text": "A call to a user-supplied address is executed. An external message call to an address specified by the caller is executed. Note that the callee account might contain arbitrary code and could re-enter any function within this contract. Reentering the contract in an intermediate state may lead to unexpected behaviour. Make sure that no state modifications are executed after this call and/or reentrancy guards are in place. Classification: SWC-107. Detection method: Search for external calls with unrestricted gas to a user-specified address."
+                                "text": "Read of/Write to persistent state following external call The contract account state is accessed after an external call to a user-defined/fixed address. To prevent reentrancy issues, consider accessing the state only before the call, especially if the callee is untrusted. Alternatively, a reentrancy lock can be used to prevent untrusted callees from re-entering the contract in an intermediate state. Classification: SWC-107. Detection method: Check whether the account state is accesses after the execution of an external call"
                             },
                             "help": {
-                                "text": "An external message call to an address specified by the caller is executed. Note that the callee account might contain arbitrary code and could re-enter any function within this contract. Reentering the contract in an intermediate state may lead to unexpected behaviour. Make sure that no state modifications are executed after this call and/or reentrancy guards are in place."
+                                "text": "The contract account state is accessed after an external call to a user-defined/fixed address. To prevent reentrancy issues, consider accessing the state only before the call, especially if the callee is untrusted. Alternatively, a reentrancy lock can be used to prevent untrusted callees from re-entering the contract in an intermediate state."
                             },
-                            "id": "mythril_0_23_5_External_Call_To_User_Supplied_Address",
-                            "name": "External Call To User-Supplied Address",
-                            "properties": {
-                                "security-severity": "2.0"
-                            },
+                            "id": "mythril_0_23_5_State_access_after_external_call",
+                            "name": "State access after external call",
                             "shortDescription": {
-                                "text": "A call to a user-supplied address is executed."
-                            }
-                        },
-                        {
-                            "fullDescription": {
-                                "text": "The return value of a message call is not checked. External calls return a boolean value. If the callee halts with an exception, 'false' is returned and execution continues in the caller. The caller should check whether an exception happened and react accordingly to avoid unexpected behavior. For example it is often desirable to wrap external calls in require() so the transaction is reverted if the call fails. Classification: SWC-104. Detection method: Test whether CALL return value is checked. For direct calls, the Solidity compiler auto-generates this check. For low-level-calls this check is omitted."
-                            },
-                            "help": {
-                                "text": "External calls return a boolean value. If the callee halts with an exception, 'false' is returned and execution continues in the caller. The caller should check whether an exception happened and react accordingly to avoid unexpected behavior. For example it is often desirable to wrap external calls in require() so the transaction is reverted if the call fails."
-                            },
-                            "id": "mythril_0_23_5_Unchecked_return_value_from_external_call",
-                            "name": "Unchecked return value from external call.",
-                            "properties": {
-                                "security-severity": "5.5"
-                            },
-                            "shortDescription": {
-                                "text": "The return value of a message call is not checked."
+                                "text": "Read of/Write to persistent state following external call"
                             }
                         },
                         {
@@ -164,15 +145,34 @@
                         },
                         {
                             "fullDescription": {
-                                "text": "Read of/Write to persistent state following external call The contract account state is accessed after an external call to a user-defined/fixed address. To prevent reentrancy issues, consider accessing the state only before the call, especially if the callee is untrusted. Alternatively, a reentrancy lock can be used to prevent untrusted callees from re-entering the contract in an intermediate state. Classification: SWC-107. Detection method: Check whether the account state is accesses after the execution of an external call"
+                                "text": "The return value of a message call is not checked. External calls return a boolean value. If the callee halts with an exception, 'false' is returned and execution continues in the caller. The caller should check whether an exception happened and react accordingly to avoid unexpected behavior. For example it is often desirable to wrap external calls in require() so the transaction is reverted if the call fails. Classification: SWC-104. Detection method: Test whether CALL return value is checked. For direct calls, the Solidity compiler auto-generates this check. For low-level-calls this check is omitted."
                             },
                             "help": {
-                                "text": "The contract account state is accessed after an external call to a user-defined/fixed address. To prevent reentrancy issues, consider accessing the state only before the call, especially if the callee is untrusted. Alternatively, a reentrancy lock can be used to prevent untrusted callees from re-entering the contract in an intermediate state."
+                                "text": "External calls return a boolean value. If the callee halts with an exception, 'false' is returned and execution continues in the caller. The caller should check whether an exception happened and react accordingly to avoid unexpected behavior. For example it is often desirable to wrap external calls in require() so the transaction is reverted if the call fails."
                             },
-                            "id": "mythril_0_23_5_State_access_after_external_call",
-                            "name": "State access after external call",
+                            "id": "mythril_0_23_5_Unchecked_return_value_from_external_call",
+                            "name": "Unchecked return value from external call.",
+                            "properties": {
+                                "security-severity": "5.5"
+                            },
                             "shortDescription": {
-                                "text": "Read of/Write to persistent state following external call"
+                                "text": "The return value of a message call is not checked."
+                            }
+                        },
+                        {
+                            "fullDescription": {
+                                "text": "A call to a user-supplied address is executed. An external message call to an address specified by the caller is executed. Note that the callee account might contain arbitrary code and could re-enter any function within this contract. Reentering the contract in an intermediate state may lead to unexpected behaviour. Make sure that no state modifications are executed after this call and/or reentrancy guards are in place. Classification: SWC-107. Detection method: Search for external calls with unrestricted gas to a user-specified address."
+                            },
+                            "help": {
+                                "text": "An external message call to an address specified by the caller is executed. Note that the callee account might contain arbitrary code and could re-enter any function within this contract. Reentering the contract in an intermediate state may lead to unexpected behaviour. Make sure that no state modifications are executed after this call and/or reentrancy guards are in place."
+                            },
+                            "id": "mythril_0_23_5_External_Call_To_User_Supplied_Address",
+                            "name": "External Call To User-Supplied Address",
+                            "properties": {
+                                "security-severity": "2.0"
+                            },
+                            "shortDescription": {
+                                "text": "A call to a user-supplied address is executed."
                             }
                         }
                     ],
